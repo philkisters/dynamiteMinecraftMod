@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "B"
+  ],
+  "key": {
+    "#": "minecraft:gunpowder",
+    "B": "minecraft:bamboo"
+  },
+  "result": {
+    "id": "dynamitemod:dynamite",
+    "count": 1
+  }
+}
