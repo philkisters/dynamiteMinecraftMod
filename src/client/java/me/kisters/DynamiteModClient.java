@@ -10,5 +10,6 @@ public class DynamiteModClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// Register entity renderer for DynamiteEntity
 		EntityRendererFactories.register(ModEntities.DYNAMITE_ENTITY_TYPE, FlyingItemEntityRenderer::new);
+		EntityRendererFactories.register(ModEntities.STRONG_DYNAMITE_ENTITY_TYPE, FlyingItemEntityRenderer::new);
 	}
 }

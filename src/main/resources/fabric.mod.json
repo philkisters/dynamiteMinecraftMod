@@ -3,13 +3,13 @@
 	"id": "dynamitemod",
 	"version": "${version}",
 	"name": "DynamiteMod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A fun little Mod that adds dynamite / firecracker exploding in different colors!",
 	"authors": [
 		"Philipp Kisters"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://kisters.me/",
+		"sources": "https://github.com/philkisters/dynamiteMinecraftMod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/dynamitemod/icon.png",

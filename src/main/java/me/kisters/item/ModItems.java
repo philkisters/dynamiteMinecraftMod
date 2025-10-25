@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
      public static Item DYNAMITE = register("dynamite", DynamiteItem::new, new Item.Settings().maxCount(16));
+     public static Item STRONG_DYNAMITE = register("strong_dynamite", StrongDynamiteItem::new, new Item.Settings().maxCount(16));
 
 	public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
 		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DynamiteMod.MOD_ID, name));
@@ -27,6 +28,8 @@ public class ModItems {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
 		    .register((itemGroup) -> itemGroup.add(ModItems.DYNAMITE));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+		    .register((itemGroup) -> itemGroup.add(ModItems.STRONG_DYNAMITE));
     }   
 
 }

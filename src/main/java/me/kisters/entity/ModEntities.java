@@ -11,11 +11,19 @@ import net.minecraft.util.Identifier;
 
 public class ModEntities {
     public static EntityType<DynamiteEntity> DYNAMITE_ENTITY_TYPE;
+    public static EntityType<StrongDynamiteEntity> STRONG_DYNAMITE_ENTITY_TYPE;
 
     public static void registerModEntities() {
        
         DYNAMITE_ENTITY_TYPE = registerEntity("dynamite_entity",
                 EntityType.Builder.<DynamiteEntity>create(DynamiteEntity::new, SpawnGroup.MISC)
+                        .dimensions(0.25f, 0.25f)
+                        .maxTrackingRange(64)
+                        .trackingTickInterval(10)
+        );
+
+        STRONG_DYNAMITE_ENTITY_TYPE = registerEntity("strong_dynamite_entity",
+                EntityType.Builder.<StrongDynamiteEntity>create(StrongDynamiteEntity::new, SpawnGroup.MISC)
                         .dimensions(0.25f, 0.25f)
                         .maxTrackingRange(64)
                         .trackingTickInterval(10)
